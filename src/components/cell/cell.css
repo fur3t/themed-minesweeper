@@ -1,0 +1,25 @@
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+.cell.revealed {
+  background-color: #ddd;
+  color: black;
+}
+
+.cell:not(.revealed) {
+  cursor: pointer;
+}
+
+.cell:not(.revealed):active {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+.cell.game-over {
+  background-color: red; 
+}

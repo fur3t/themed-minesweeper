@@ -1,0 +1,26 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#ece0d1;
+  align-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+body{
+  background-color: #ece0d1;
+  min-height: 100vh;
+}
+
+#root
+{
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+}

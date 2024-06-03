@@ -1,0 +1,41 @@
+.game-panel {
+  display: flex;
+  text-align: center;
+  background-color: #967259;
+  flex-direction: column;
+  max-height: 70%;
+  max-width: 70%;
+  height: 70%;
+  width: 70%;
+  margin: 0.75% 15%;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-time {
+  display: flex;
+  justify-content: center;
+}
+
+.game-over-message {
+  margin-top: 0em;
+  color: red;
+  font-size: 2em;
+  margin-bottom: 0.3em;
+  font-weight: 900;
+}
+
+.game-finished-message {
+  margin-top: 0em;
+  color: lime;
+  font-size: 2em;
+  margin-bottom: 0.3em;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .game-panel{
+    min-width: 90%;
+  }
+}

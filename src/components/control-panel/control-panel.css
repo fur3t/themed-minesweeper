@@ -1,0 +1,177 @@
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    color: #ece0d1;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: #967259;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+#secondh1 {
+    margin-top: 0;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.control-panel p, label {
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.settings div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+select {
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: currentColor;
+}
+
+#logoimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#logoimg img {
+    height: 8vmax;
+    width: auto;
+}
+
+.startbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.startbutton button {
+    padding: 10px 20px;
+    color: #dbc1ac;
+    background-color: #634832;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .control-panel {
+        width: 90%;
+        padding: 20px;
+        padding-top: 0px;
+        border-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        margin-top: -15px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .control-panel p, label {
+        font-size: 1.2em;
+        margin-right: 10px;
+    }
+
+
+    #logoimg img {
+        height: 6vmax;
+    }
+
+    .settings {
+        flex-direction: row;
+    }
+
+    .settings div {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .startbutton button {
+        padding: 10px 15px;
+    }
+
+    .branding .title {
+        display: flex;
+    }
+
+    .branding .title #secondh1 {
+        margin-block-start: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+    }
+}
+
+@media (max-width: 480px) {
+    .control-panel {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .control-panel p, label {
+        font-size: 1em;
+    }
+
+    #logoimg img {
+        height: 5vmax;
+    }
+
+    .settings div {
+        width: 100%;
+    }
+
+    .startbutton button {
+        padding: 10px;
+    }
+}
