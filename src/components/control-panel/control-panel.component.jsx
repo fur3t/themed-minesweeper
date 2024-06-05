@@ -3,10 +3,6 @@ import './control-panel.css';
 import Timer from "../timer/timer.component";
 
 function ControlPanel({ level, onLevelChange, mines, onStartGame, gameStarted, onThemeChange, gameOver, themeConfig, theme }) {
-  const handleThemeChange = (event) => {
-    const selectedTheme = event.target.value;
-    onThemeChange(selectedTheme);
-  };
 
   return (
     <div className="control-panel" style={{ backgroundColor: themeConfig.controlPanelBackgroundColor, color: themeConfig.textColor }}>
@@ -48,7 +44,7 @@ function ControlPanel({ level, onLevelChange, mines, onStartGame, gameStarted, o
               <label>
                 Tema: {" "}
               </label>
-              <select value={theme} onChange={handleThemeChange} style={{color: themeConfig.backgroundColor, backgroundColor: themeConfig.buttonColor}}>
+              <select value={theme} onChange={(event) => onThemeChange(event.target.value)} style={{color: themeConfig.backgroundColor, backgroundColor: themeConfig.buttonColor}}>
                 <option value="creme">Creme</option>
                 <option value="claro">Claro</option>
                 <option value="escuro">Escuro</option>

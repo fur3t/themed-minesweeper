@@ -4,14 +4,9 @@ function Timer({ gameStarted, gameOver }) {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    if (!gameStarted) {
+    if (!gameStarted || gameOver) {
       setSeconds(0);
       return;
-    }
-    else if(gameOver)
-    {
-      setSeconds(0);
-    return;
     }
 
     const interval = setInterval(() => {
