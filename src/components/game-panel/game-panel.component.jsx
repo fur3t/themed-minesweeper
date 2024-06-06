@@ -5,8 +5,12 @@ import './game-panel.css';
 function GamePanel({ height, width, mines, gameStarted, gameOver, gameWon, onGameOver, onGameWon, themeConfig, onMineCountChange, finalTime }) {
   return (
     <div className="game-panel" style={{ backgroundColor: themeConfig.gamePanelBackgroundColor }}>
-      {gameWon && <div className="final-time" style={{color: themeConfig.textColor}}>⏱️ Tempo: {finalTime} segundos! ⏱️</div>}
-      {gameWon && <div className="game-finished-message">Ganhaste!</div>}
+      {gameWon && 
+      <div>
+      <div className="final-time" style={{color: themeConfig.textColor}}>⏱️ Tempo: {finalTime} segundos! ⏱️</div>
+      <div className="game-finished-message">Ganhaste!</div>
+      </div>
+      }
       {gameOver && <div className="game-over-message">Perdeste!</div>}
       {(gameStarted || gameOver || gameWon) && (
         <Board
